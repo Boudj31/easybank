@@ -5,7 +5,7 @@
   <header class="header">
     <nav class="navigation container">
       <div class="logo">
-        <router-link class="header" :to="{ name: 'Home' }"><img src="./../assets/img/logo.svg" alt="logo easybank"></router-link>
+        <router-link class="header" :to="{ name: 'home' }"><img src="./../assets/img/logo.svg" alt="logo easybank"></router-link>
       </div>
       <div class="burger" v-show="mobile" @click="openMenu()">
           <img v-show ="!mobileNav" src="./../assets/img/icon-hamburger.svg" alt="burger menu" width="30" height="30" >
@@ -13,23 +13,23 @@
       </div>
       <div class="nav-links">
         <ul>
-          <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
+          <router-link class="link" :to="{ name: 'home' }">Home</router-link>
           <router-link class="link" :to="{ name: 'Blog' }">About</router-link>
-          <router-link class="link" :to="{ name: 'About' }">Contact</router-link>
+          <router-link class="link" :to="{ name: 'Contact' }">Contact</router-link>
           <router-link class="link" :to="{ name: 'Nouveau' }">Blog</router-link>
-          <router-link class="link" :to="{ name: 'Nouveau' }">Carreer</router-link>
+          <router-link class="link" :to="{ name: 'Carreers' }">Carreers</router-link>
         </ul>
       </div>
       <div class="mobile-menu" v-show="mobileNav">
         <ul class="mobile">
-          <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
+          <router-link class="link" :to="{ name: 'home' }">Home</router-link>
           <router-link class="link" :to="{ name: 'Blog' }">About</router-link>
-          <router-link class="link" :to="{ name: 'About' }">Contact</router-link>
+          <router-link class="link" :to="{ name: 'Contact' }">Contact</router-link>
           <router-link class="link" :to="{ name: 'Nouveau' }">Blog</router-link>
-          <router-link class="link" :to="{ name: 'Nouveau' }">Carreer</router-link>
+          <router-link class="link" :to="{ name: 'Nouveau' }">Carreers</router-link>
         </ul>
       </div>
-      <div class="button login">
+      <div class="headerbtn login">
            <router-link class="link" :to="{ name: 'Login' }">Request Invite</router-link>
       </div>
         </nav>
@@ -101,11 +101,11 @@ export default {
     text-decoration: none;
     color: var(--grayishblue);
 }
-.button .link {
+.headerbtn .link {
     color: var(--white);
     font-weight: 600;
+    padding: 15px 25px;
     background: linear-gradient(90deg, var(--limegreen) 0%, var(--brightcyan) 100%);
-    padding: 15px 30px;
     border-radius: 30px;
     border: none;
     font-size: 16px;

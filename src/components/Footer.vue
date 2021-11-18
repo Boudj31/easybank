@@ -30,7 +30,7 @@
           <div class="column footer-center">
                   <ul class="footer-links-l">
                       <li><a href="">About Us</a></li>
-                      <li><a href="">Contact</a></li>
+                      <li><a href="/contact">Contact</a></li>
                       <li><a href="">Blog</a></li>
                   </ul>
                    <ul class="footer-links-r">

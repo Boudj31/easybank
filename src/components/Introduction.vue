@@ -59,14 +59,8 @@ export default {
  }
 
  .left .button {
-    color: var(--white);
     margin-top: 50px;
-    font-weight: 600;
-    background: linear-gradient(90deg, var(--limegreen) 0%, var(--brightcyan) 100%);
-    padding: 15px 30px;
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
+
 }
 
 /* active and hover */

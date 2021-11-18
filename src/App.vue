@@ -83,6 +83,20 @@ a {
      text-align: left;    
      color: var(--grayishblue);
   }
+  .button {
+    color: var(--white);
+    font-weight: 600;
+    background: linear-gradient(90deg, var(--limegreen) 0%, var(--brightcyan) 100%);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+   .button:hover {
+      opacity: 0.8;
+  }
+
 
 </style>>
 
