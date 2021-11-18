@@ -29,18 +29,21 @@
           </div>
           <div class="column footer-center">
                   <ul class="footer-links-l">
-                      <li><a href="">About Us</a></li>
-                      <li><a href="/contact">Contact</a></li>
-                      <li><a href="">Blog</a></li>
+                       <router-link class="link" :to="{ name: 'About' }">About Us</router-link>
+                       <router-link class="link" :to="{ name: 'Contact' }">Contact</router-link>
+                       <router-link class="link" :to="{ name: 'Blog' }">Blog</router-link>
                   </ul>
                    <ul class="footer-links-r">
-                      <li><a href="">Careers</a></li>
-                      <li><a href="">Support</a></li>
-                      <li><a href="">Privacy Policy</a></li>
+                      <router-link class="link" :to="{ name: 'Carreers' }">Carreers</router-link>
+                      <router-link class="link" :to="{ name: 'home' }">Support</router-link>
+                      <router-link class="link" :to="{ name: 'home' }">Privacy</router-link>
+
                   </ul>
           </div>
           <div class="column footer-left">
-              <button class="button login">Request Invite</button>
+              <button class="button login">
+                  <router-link class="link" :to="{ name: 'Contact' }">Request Invite</router-link>
+                  </button>
               <p class="cpy"> © Easybank. All Rights Reserved</p>
           </div>
       </div>
@@ -89,6 +92,7 @@ export default {
     margin-bottom: 50px;
 }
 
+
 .footer-left .cpy{
     color: var(--grayishblue);
 }
@@ -116,9 +120,10 @@ export default {
     margin-left: 100px;
     padding: 10px 0;
 }
-.footer-center ul li a {
+.footer-center ul .link {
     margin-bottom: 15px;
     font-size: 0.8rem;
+    display: block;
 }
 
 

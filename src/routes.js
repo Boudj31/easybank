@@ -5,6 +5,7 @@ import Blog from './views/Blog.vue';
 import Contact from './views/Contact.vue';
 import Carreers from './views/Carreers.vue';
 import BlogView from './views/BlogView.vue';
+import About from './views/About.vue';
 
 
 
@@ -18,6 +19,7 @@ const router = new VueRouter({
         { path: '/contact', name: "Contact", component: Contact },
         { path: '/carreers', name: "Carreers", component: Carreers },
         { path: '/blog/:blogid', name: "BlogView", component: BlogView },
+        { path: '/about', name: "About", component: About },
     ],
  
 })

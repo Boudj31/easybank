@@ -12,7 +12,7 @@
          <p class="text">Take your financial life online. Your Easybank account will be a one-stop-shop 
            for spending, saving, budgeting, investing, and much more.</p>
            <button class="button">
-               Request Invite
+              <router-link class="link" :to="{ name: 'Contact' }">Request Invite</router-link>
            </button>
      </div>
      <div class="right">

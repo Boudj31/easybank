@@ -1,6 +1,6 @@
 <template>
 <main class="form">
-  <div class="container">
+  <div class="container-sm">
    <h1 class="title">Contact Us</h1>
    <div v-if="errors.length" class="error-card">
            <ul v-for="(error, i) in errors" :key="i">
@@ -29,8 +29,7 @@
        <div class="form-action">
            <p>{{error}}</p>
           <label for="message">Message:</label>
-          <textarea name="message" id="message" cols="30" rows="10" v-model="message" placeholder="       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur quidem reprehenderit nisi quam! Totam tenetur obcaecati ipsum expedita voluptates. Minima quia incidunt deleniti non quidem nam dolor corporis reiciendis animi?
-       Commodi magni sunt reiciendis perferendis quibusdam ipsam doloremque earum quidem! Magni eius earum modi, totam et sed laudantium ducimus, cum quod nulla, qui labore. Libero itaque optio laboriosam mollitia voluptates!"></textarea>
+          <textarea name="message" id="message" cols="30" rows="10" v-model="message" placeholder="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur quidem reprehenderit nisi quam! Totam tenetur obcaecati ipsum expedita voluptates...."></textarea>
        </div>
        <div class="submit">
            <button class="button">Send !</button>

@@ -1,44 +1,41 @@
 <template>
-  <div class="blog-page">
-      <div class="container">
-          <h1 class="title">Our Blogposts</h1>
-           <Card v-for="(post, i) in posts" :key="i" :post="post" />
-             <Card v-for="(post, i) in posts" :key="i" :post="post" />
-   </div>
-  </div>
+  <section id="section2">
+    <div class="container">
+      <div class="about">
+          <h2 class="subtitle">About us</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus possimus fugit quis voluptates fuga repellendus aperiam commodi ab at, ratione minus eos quae nisi quia enim totam beatae amet illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima temporibus molestiae tempora est adipisci ipsum dolore necessitatibus maxime, deserunt natus iure sunt sint neque numquam? Enim tempora quo ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptas dolor, quae vitae voluptatibus, recusandae pariatur qui, placeat sit officia aliquid saepe minus natus eaque modi sunt repellendus libero. Libero.</p>
+      </div> 
+      <div class="cards">
+        <CardDescription v-for="(card, i) in cardsabout" :key="i" :card="card"/>
+       </div> 
+    </div>
+  
+  </section>
 </template>
 
 <script>
-import Card from '../components/Card'
+import CardDescription from '../components/CardDescription'
 
 export default {
   name: "About",
   components: {
-      Card
+      CardDescription
   },
    computed: {
-     posts() {
-         return this.$store.state.posts;
+     cardsabout() {
+         return this.$store.state.cardsabout;
      }
  }
 
 }
 </script>
 <style>
-.blog-page {
-    background-color: var( --lightgb);
+.about .subtitle{
+   margin-top: 40px;
 }
-.blog-page h1 {
-    text-align: center;
-    margin-top: 30px;
-}
-.cards-blog{
-     flex-wrap: wrap;
-     justify-content: space-between;;
-     margin-bottom: 20px;
-}
-.card-blog {
 
+.card-ab img {
+    border-radius: 50%;
 }
 
 </style>

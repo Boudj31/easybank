@@ -14,7 +14,7 @@
       <div class="nav-links">
         <ul>
           <router-link class="link" :to="{ name: 'home' }">Home</router-link>
-          <router-link class="link" :to="{ name: 'Blog' }">About</router-link>
+          <router-link class="link" :to="{ name: 'About' }">About</router-link>
           <router-link class="link" :to="{ name: 'Contact' }">Contact</router-link>
           <router-link class="link" :to="{ name: 'Blog' }">Blog</router-link>
           <router-link class="link" :to="{ name: 'Carreers' }">Carreers</router-link>
@@ -23,14 +23,14 @@
       <div class="mobile-menu" v-show="mobileNav">
         <ul class="mobile">
           <router-link class="link" :to="{ name: 'home' }">Home</router-link>
-          <router-link class="link" :to="{ name: 'Blog' }">About</router-link>
+          <router-link class="link" :to="{ name: 'About' }">About</router-link>
           <router-link class="link" :to="{ name: 'Contact' }">Contact</router-link>
           <router-link class="link" :to="{ name: 'Blog' }">Blog</router-link>
-          <router-link class="link" :to="{ name: 'Nouveau' }">Carreers</router-link>
+          <router-link class="link" :to="{ name: 'Carreers' }">Carreers</router-link>
         </ul>
       </div>
       <div class="headerbtn login">
-           <router-link class="link" :to="{ name: 'Login' }">Request Invite</router-link>
+           <router-link class="link" :to="{ name: 'Contact' }">Request Invite</router-link>
       </div>
         </nav>
   </header>

@@ -60,8 +60,14 @@ a {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    
+  
   }
+  .container-sm {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
 
   .title {
      font-size: 2.8rem;
@@ -103,8 +109,7 @@ a {
 }
 .cards-blog {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
 }
 .card {

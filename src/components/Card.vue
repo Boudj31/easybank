@@ -1,5 +1,4 @@
 <template>
-<div class="cards-blog">
       <div class="card card-blog">
           <img :src="post.img" alt="" class="card-img">
           <div class="desc">
@@ -7,11 +6,9 @@
           <h3 class="card-title"> 
               <router-link :to="{name: 'BlogView', params: {blogid: this.post.id}}">{{post.title}}</router-link>
               </h3>
-          <p class="text">{{post.content}}</p>
+          <p class="text">{{post.summary}}</p>
   </div>
       </div>   
-   </div> 
-
       
   
 </template>

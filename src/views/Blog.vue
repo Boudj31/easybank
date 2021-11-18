@@ -2,8 +2,9 @@
   <div class="blog-page">
       <div class="container">
           <h1 class="title">Our Blogposts</h1>
-           <Card v-for="(post, i) in posts" :key="i" :post="post" />
-             <Card v-for="(post, i) in posts" :key="i" :post="post" />
+          <div class="cards cards-blog">
+               <Card v-for="(post, i) in posts" :key="i" :post="post" />
+          </div>
    </div>
   </div>
 </template>
@@ -32,13 +33,9 @@ export default {
     text-align: center;
     margin-top: 30px;
 }
-.cards-blog{
-     flex-wrap: wrap;
-     justify-content: space-between;;
-     margin-bottom: 20px;
-}
-.card-blog {
-
+.cards-blog {
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 </style>

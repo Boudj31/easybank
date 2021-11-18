@@ -5,6 +5,7 @@
        <h1 class="title">{{ this.currentPost[0].title}}</h1>
        <span>Posted {{ this.currentPost[0].date}}</span>
        <img class="img-blog" :src="this.currentPost[0].img" alt="">
+       <p class="text">{{this.currentPost[0].summary}}</p>
        <p>{{ this.currentPost[0].content}}</p>
 <p class="author">By {{ this.currentPost[0].author}}</p>
 </div>
@@ -31,12 +32,7 @@ export default {
 }
 </script>
 <style>
-.container-sm {
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-}
+
 .img-blog {
     object-fit: cover;
     width: 100%;
