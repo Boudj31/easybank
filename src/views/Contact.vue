@@ -129,6 +129,7 @@ export default {
 .form-action input:focus, .form-action textarea:focus {
 
     border: 3px solid var(--limegreen);
+    outline: none;
 }
 
 .submit .button {

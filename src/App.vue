@@ -96,7 +96,29 @@ a {
    .button:hover {
       opacity: 0.8;
   }
+ .cards {
+    display: flex;
+    flex-wrap: row;
+    margin-top: 20px;
+}
+.cards-blog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+}
 
+
+@media screen and (max-width: 760px) {
+   
+   .cards {
+       flex-direction: column;
+   }
+} 
 
 </style>>
 

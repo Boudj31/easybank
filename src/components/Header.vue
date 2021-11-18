@@ -16,7 +16,7 @@
           <router-link class="link" :to="{ name: 'home' }">Home</router-link>
           <router-link class="link" :to="{ name: 'Blog' }">About</router-link>
           <router-link class="link" :to="{ name: 'Contact' }">Contact</router-link>
-          <router-link class="link" :to="{ name: 'Nouveau' }">Blog</router-link>
+          <router-link class="link" :to="{ name: 'Blog' }">Blog</router-link>
           <router-link class="link" :to="{ name: 'Carreers' }">Carreers</router-link>
         </ul>
       </div>
@@ -25,7 +25,7 @@
           <router-link class="link" :to="{ name: 'home' }">Home</router-link>
           <router-link class="link" :to="{ name: 'Blog' }">About</router-link>
           <router-link class="link" :to="{ name: 'Contact' }">Contact</router-link>
-          <router-link class="link" :to="{ name: 'Nouveau' }">Blog</router-link>
+          <router-link class="link" :to="{ name: 'Blog' }">Blog</router-link>
           <router-link class="link" :to="{ name: 'Nouveau' }">Carreers</router-link>
         </ul>
       </div>

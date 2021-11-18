@@ -1,42 +1,17 @@
 <template>
-<div class="cards">
+<div class="cards-blog">
       <div class="card card-blog">
-          <img src="./../assets/img/image-plane.jpg" alt="" class="card-img">
+          <img :src="post.img" alt="" class="card-img">
           <div class="desc">
-          <span class="author">By Claire Robinson</span>
-          <h3 class="card-title"> Receive money in any currency with no fees</h3>
-          <p class="text">The world is getting smaller and we’re becoming more mobile. So why should you be 
-  forced to only receive money in a single …</p>
+          <span class="author">{{post.author}}</span>
+          <h3 class="card-title"> 
+              <router-link :to="{name: 'BlogView', params: {blogid: this.post.id}}">{{post.title}}</router-link>
+              </h3>
+          <p class="text">{{post.content}}</p>
   </div>
-      </div>
-    <div class="card card-blog">
-          <img src="./../assets/img/image-plane.jpg" alt="" class="card-img">
-          <div class="desc">
-          <span class="author">By Claire Robinson</span>
-          <h3 class="card-title"> Receive money in any currency with no fees</h3>
-          <p class="text">The world is getting smaller and we’re becoming more mobile. So why should you be 
-  forced to only receive money in a single …</p>
-  </div>
-      </div>
-      <div class="card card-blog">
-          <img src="./../assets/img/image-plane.jpg" alt="" class="card-img">
-          <div class="desc">
-          <span class="author">By Claire Robinson</span>
-          <h3 class="card-title"> Receive money in any currency with no fees</h3>
-          <p class="text">The world is getting smaller and we’re becoming more mobile. So why should you be 
-  forced to only receive money in a single …</p>
-  </div>
-      </div>
-      <div class="card card-blog">
-          <img src="./../assets/img/image-plane.jpg" alt="" class="card-img">
-          <div class="desc">
-          <span class="author">By Claire Robinson</span>
-          <h3 class="card-title"> Receive money in any currency with no fees</h3>
-          <p class="text">The world is getting smaller and we’re becoming more mobile. So why should you be 
-  forced to only receive money in a single …</p>
-  </div>
-      </div>
-   </div>   
+      </div>   
+   </div> 
+
       
   
 </template>
@@ -45,31 +20,44 @@
 
 export default {
   name: "Description",
-  props: ['card'],
+  props: ['post'],
   components: {
   },
+  methods: {
+       maxLenght(value, length) {
+     if (value.length > length) {
+        return value.slice(0, length - 4) + '...';
+    } else {
+        return value;
+    }
+}
+  }
   
 }
 </script>
 
 <style>
 
-.card {
-    display: flex;
-    flex-direction: column;
-}
-
 .card-blog {
-    width: 25%;
     background-color: var(--white);
     border-radius: 10px;
+     display: flex;
+     width: 23%;
 }
 
 .card-blog h3 {
     font-size: 1.1rem;
    color: var(--darkblue);
    opacity: 0.9;
+   
 }
+.card-blog h3:hover {
+   color: var(--limegreen);
+   opacity: 0.9;
+   
+}
+
+
 .card-img, .card-title {
     margin-bottom: 15px;
 }

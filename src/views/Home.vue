@@ -5,8 +5,8 @@
     <div class="blog">
         <div class="container">
       <h3 class="subtitle"> Latest Articles</h3>
-      <div class="cards">
-          <Card />
+      <div class="cards cards-blog">
+          <Card v-for="(post, i) in posts" :key="i" :post="post" />
       </div>
       </div>
     </div>
@@ -26,7 +26,12 @@ export default {
       Introduction,
       Description,
       Card
-  }
+  },
+ computed: {
+     posts() {
+         return this.$store.state.posts;
+     }
+ }
 }
 </script>
 
@@ -34,19 +39,11 @@ export default {
 .blog {
     background-color: var(--vlgray);
 }
-.cards {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
+
+.cards-blog {
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-@media screen and (max-width: 760px) {
-   
-   .cards {
-       flex-direction: column;
-   }
-} 
-
 
 
 </style>

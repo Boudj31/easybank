@@ -12,7 +12,7 @@
 import Card from '../components/Card'
 
 export default {
-  name: "Blog",
+  name: "About",
   components: {
       Card
   },
