@@ -43,7 +43,7 @@ export default {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-size: var(--sizebody);
-  max-width: 1440px;
+  max-width: 100vw;
   list-style: none;
 }
 a {
